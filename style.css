@@ -1,0 +1,22 @@
+body{
+    font-family: "DynaPuff", system-ui;
+  background: linear-gradient(to bottom, #8fc6ed, #b3faff); 
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+justify-content: center;
+}
+
+h1{
+    color:white
+}
+
+.questions{
+    color: #f7eecf;
+
+
+}
+ img{
+
+     width: 90vw;
+ }
