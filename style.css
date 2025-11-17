@@ -2,21 +2,41 @@ body{
     font-family: "DynaPuff", system-ui;
   background: linear-gradient(to bottom, #8fc6ed, #b3faff); 
       width: 100vw;
-      height: 100vh;
+      height: 110vh;
       display: flex;
 justify-content: center;
-}
+align-items: center;
 
+}
+.main{      
+    display: flex;
+justify-content: center;
+flex-direction: column;
+}
+.top{
+    display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+}
 h1{
-    color:white
+    color:white;
+    font-size: 3vw;
+          display: flex;
+justify-content: center;
+align-items: center;
 }
 
 .questions{
-    color: #f7eecf;
-
+    color: #6ba4cc;
+font-size: larger;
+      display: flex;
+justify-content: left;
 
 }
  img{
 
-     width: 90vw;
+     width: 50vw;
+           display: flex;
+justify-content: center;
  }

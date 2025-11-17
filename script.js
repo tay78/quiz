@@ -27,15 +27,17 @@ let next6 = document.querySelector('.next6');
 let next7 = document.querySelector('.next7'); 
 let next8 = document.querySelector('.next8');
 let next9 = document.querySelector('.next9');
+let next10 = document.querySelector('.next10');
 let restart = document.querySelector('.restart');
 let results = document.querySelector('.results');
 restart.style.display ="none";
 results.style.display ="none";
 
-
-if (document.getElementById('.q1One').checked) {  
+next1.addEventListener('click', function() { 
+    q1.style.display ="none";
+    q2.style.display ="block";
+if (document.getElementById('q1One').checked) {  
     console.log("correct");
-        alert('correct');
     correctAnswer = 1+correctAnswer;
 } else if (document.getElementById('q1Two').checked) {
     console.log("wrong");
@@ -57,10 +59,10 @@ wrongAnswer=1+wrongAnswer;
     console.log("No selection made");
     
 }
-
-next1.addEventListener('click', function() { 
-    q1.style.display ="none";
-    q2.style.display ="block";
+});
+next2.addEventListener('click', function() { 
+    q2.style.display ="none";
+    q3.style.display ="block";
     if (document.getElementById('q2One').checked) {  
     console.log("correct");
     correctAnswer = 1+correctAnswer;
@@ -71,9 +73,9 @@ wrongAnswer=1+wrongAnswer;
     console.log("No selection made");
 }
 });
-next2.addEventListener('click', function() {  
-    q2.style.display ="none";
-    q3.style.display ="block";
+next3.addEventListener('click', function() {  
+    q3.style.display ="none";
+    q4.style.display ="block";
     if (document.getElementById('q3One').checked) {  
     console.log("wrong");
     wrongAnswer = 1+wrongAnswer;
@@ -95,9 +97,9 @@ wrongAnswer=1+wrongAnswer;
     console.log("No selection made");
 }
 });
-next3.addEventListener('click', function() {  
-    q3.style.display ="none";
-    q4.style.display ="block";
+next4.addEventListener('click', function() {  
+    q4.style.display ="none";
+    q5.style.display ="block";
 let  q4One2= document.getElementById("q4One");
 let q4OneInput = q4One2.value;
     if (q4OneInput=="Rad") {  
@@ -109,9 +111,9 @@ let q4OneInput = q4One2.value;
 
 }
 });
-next4.addEventListener('click', function() {  
-    q4.style.display ="none";
-    q5.style.display ="block";
+next5.addEventListener('click', function() {  
+    q5.style.display ="none";
+    q6.style.display ="block";
         if (document.getElementById('q5One').checked) {  
     console.log("wrong");
     wrongAnswer = 1+wrongAnswer;
@@ -133,9 +135,9 @@ wrongAnswer=1+wrongAnswer;
     console.log("No selection made");
 }
 });
-next5.addEventListener('click', function() {  
-    q5.style.display ="none";
-    q6.style.display ="block";
+next6.addEventListener('click', function() {  
+    q6.style.display ="none";
+    q7.style.display ="block";
             if (document.getElementById('q6Two').checked) {  
     console.log("wrong");
     wrongAnswer = 1+wrongAnswer;
@@ -153,9 +155,9 @@ wrongAnswer=1+wrongAnswer;
     console.log("No selection made");
 }
 });
-next6.addEventListener('click', function() {  
-    q6.style.display ="none";
-    q7.style.display ="block";
+next7.addEventListener('click', function() {  
+    q7.style.display ="none";
+    q8.style.display ="block";
             if (document.getElementById('q7One').checked) {  
     console.log("wrong");
     wrongAnswer = 1+wrongAnswer;
@@ -166,9 +168,9 @@ next6.addEventListener('click', function() {
     console.log("No selection made");
 }
 });
-next7.addEventListener('click', function() {  
-    q7.style.display ="none";
-    q8.style.display ="block";
+next8.addEventListener('click', function() {  
+    q8.style.display ="none";
+    q9.style.display ="block";
             if (document.getElementById('q8Two').checked) {  
     console.log("wrong");
     wrongAnswer = 1+wrongAnswer;
@@ -182,9 +184,10 @@ wrongAnswer=1+wrongAnswer;
     console.log("No selection made");
 }
 });
-next8.addEventListener('click', function() {  
-    q8.style.display ="none";
-    q9.style.display ="block";
+next9.addEventListener('click', function() {  
+    q9.style.display ="none";
+    results.style.display ="block";
+    restart.style.display ="block";
 let  q9One2= document.getElementById("q9One");
 let q9OneInput = q9One2.value;
     if (q9OneInput==7) {  
@@ -196,7 +199,7 @@ let q9OneInput = q9One2.value;
 
 }
 });
-next9.addEventListener('click', function() {  
+next10.addEventListener('click', function() {  
     q9.style.display ="none";
     results.style.display ="block";
     restart.style.display ="block";
