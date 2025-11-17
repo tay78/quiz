@@ -14,6 +14,8 @@ let q7 = document.querySelector('.q7');
     q7.style.display ="none";
 let q8 = document.querySelector('.q8');
     q8.style.display ="none";
+let q9 = document.querySelector('.q9');
+    q9.style.display ="none"
 let correctAnswer = 0;
 let wrongAnswer = 0;
 let next1 = document.querySelector('.next1');
@@ -24,34 +26,38 @@ let next5 = document.querySelector('.next5');
 let next6 = document.querySelector('.next6');
 let next7 = document.querySelector('.next7'); 
 let next8 = document.querySelector('.next8');
-let next9 = document.querySelector('next9');
+let next9 = document.querySelector('.next9');
 let restart = document.querySelector('.restart');
 let results = document.querySelector('.results');
 restart.style.display ="none";
 results.style.display ="none";
 
-q1.addEventListener('click', function() {
-if (document.getElementById('q1One').checked) {  
+
+if (document.getElementById('.q1One').checked) {  
     console.log("correct");
+        alert('correct');
     correctAnswer = 1+correctAnswer;
 } else if (document.getElementById('q1Two').checked) {
     console.log("wrong");
+     alert('wrong');
     wrongAnswer = 1+wrongAnswer;
 } else if (document.getElementById('q1Three').checked) {
     console.log("wrong");
+     alert('wrong');
 wrongAnswer=1+wrongAnswer;
 } else if (document.getElementById('q1Four').checked) {
     console.log("wrong");
 wrongAnswer=1+wrongAnswer;
-
+ alert('wrong');
 } else if (document.getElementById('q1Five').checked) {
     console.log("wrong");
 wrongAnswer=1+wrongAnswer;
-
+ alert('wrong');
 } else {
     console.log("No selection made");
+    
 }
-});
+
 next1.addEventListener('click', function() { 
     q1.style.display ="none";
     q2.style.display ="block";
