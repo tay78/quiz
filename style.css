@@ -1,5 +1,5 @@
 body{
-    font-family: "DynaPuff", system-ui;
+  font-family: "Sour Gummy", sans-serif;
   background: linear-gradient(to bottom, #8fc6ed, #b3faff); 
       width: 100vw;
       height: 110vh;
@@ -8,6 +8,7 @@ justify-content: center;
 align-items: center;
 
 }
+
 .main{      
     display: flex;
 justify-content: center;
@@ -20,6 +21,8 @@ align-items: center;
 flex-direction: column;
 }
 h1{
+        font-family: "Shantell Sans", cursive;
+
     color:white;
     font-size: 3vw;
           display: flex;
