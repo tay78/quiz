@@ -16,6 +16,8 @@ let q8 = document.querySelector('.q8');
     q8.style.display ="none";
 let q9 = document.querySelector('.q9');
     q9.style.display ="none"
+let q10 = document.querySelector('.q10');
+    q10.style.display ="none"
 let correctAnswer = 0;
 let wrongAnswer = 0;
 let next1 = document.querySelector('.next1');
@@ -28,10 +30,14 @@ let next7 = document.querySelector('.next7');
 let next8 = document.querySelector('.next8');
 let next9 = document.querySelector('.next9');
 let next10 = document.querySelector('.next10');
+let next11 = document.querySelector('.next11');
 let restart = document.querySelector('.restart');
 let results = document.querySelector('.results');
 restart.style.display ="none";
 results.style.display ="none";
+let colorPicker = document.getElementById('colorPicker');
+  let finalColor;
+  let selectedColor;
 
 next1.addEventListener('click', function() { 
     q1.style.display ="none";
@@ -186,19 +192,22 @@ wrongAnswer=1+wrongAnswer;
 });
 next9.addEventListener('click', function() {  
     q9.style.display ="none";
-    results.style.display ="block";
-    restart.style.display ="block";
-let  q9One2= document.getElementById("q9One");
-let q9OneInput = q9One2.value;
-    if (q9OneInput==7) {  
-    console.log("correct");
-    correctAnswer = 1+correctAnswer;
-} else{
-    console.log("wrong");
-    wrongAnswer = 1+wrongAnswer;
+    q10.style.display ="block";
 
-}
+colorPicker.addEventListener('input', (event) => {
+  console.log('Selected color:', selectedColor);
+ selectedColor = event.target.value;
+  // You can use selectedColor to update elements, styles, etc.
 });
+
+colorPicker.addEventListener('change', (event) => {
+  console.log('Final color selected:', finalColor);
+    finalColor = event.target.value;
+
+});
+
+});
+
 next10.addEventListener('click', function() {  
     q9.style.display ="none";
     results.style.display ="block";
